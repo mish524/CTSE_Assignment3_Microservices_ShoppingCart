@@ -27,6 +27,6 @@ spec:
       containers:
       - image: mish524/shoppingcart:v2
         ports:
-        - containerPort: 4000
+        - containerPort: 3000
         name: cart-management
         resources: {}
