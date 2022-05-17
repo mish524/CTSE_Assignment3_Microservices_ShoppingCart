@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 module.exports = app => {
-    mongoose.connect('mongodb://localhost:27017/ShoppingCart', {
+    mongoose.connect('mongodb+srv://mish24:BgGmAe-AUwyW%239z@cluster0.sqzsg.mongodb.net/?retryWrites=true&w=majority', {
         useUnifiedTopology: true,
         useNewUrlParser: true
     }).then(res => console.log("conneceted")).catch(err => console.log(err))

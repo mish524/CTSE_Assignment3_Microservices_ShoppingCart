@@ -11,11 +11,9 @@ app.use(morgan('dev'));
 app.use(cors());
 app.use(bodyParser.json())
 app.get('/', (req, res) => {
-    res.json({
-        message: 'Arise MERN developers'
-    });
+    res.send('<h1>Shopping Cart</h1>');
 });
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Application is running on ${port}`);
-});
+}); 
